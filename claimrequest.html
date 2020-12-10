@@ -32,9 +32,21 @@
           </header>
           <div style="margin-left: 42px; margin-right: 42px;">
          <section id="content">
-            <p class="headertext">Appointment of Veterans Service Organization as Claimant's Representative</p>
+            <p class="headertext" id="va-header">Appointment of Veterans Service Organization as Claimant's Representative</p>
             <div id="search-case"></div>
             <script>  
+               window.addEventListener("message", (event)=>{
+// Normally you would check event.origin
+        // To verify the targetOrigin matches
+        // this window's domain
+        console.log(event.data);
+        if(event.data=="Remove Session Storage"){
+          sessionStorage.removeItem("caseid");
+          location.reload();
+          $("#va-header").hide();
+        }
+      
+    });
               function getQueryVariable(variable) {
               var query = window.location.search.substring(1);
               var vars = query.split("&");
@@ -89,6 +101,7 @@
             else{
               
                 $("#msg").show();
+               $("#va-header").hide();
                 
             }
        
