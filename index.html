@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Veteran Affairs</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="images/DMVA-Seal.png"/>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie6_script_other.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+
+<body id="page1" style="background-color: #fff;">
+    <div class="utility" role="navigation" style="background-image: url(images/state-seal_sm.png); background-repeat: no-repeat; margin-top: 5px; height: 90px; background-position: left;">
+        <ul>
+<li><a href="http://www.nc.gov/">NC.GOV</a></li>
+<li><a href="http://www.nc.gov/agencies">AGENCIES</a></li>
+<li><a href="http://www.nc.gov/jobs">JOBS</a></li>
+<li><a href="http://www.nc.gov/services">SERVICES</a></li>
+</ul>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class="group login" role="heading" style="margin-bottom: 60px;">Welcome to MyDMV</h1>
+
+<form action="claimrequest.html">
+  <div class="group login">
+    <div class="row">
+        <div class="column left">
+          
+            <div class="panel form login-form raised" style="height:443px;">
+              <div class="alert alert-danger" role="alert" id="wrongpassword" style="display: none;"> 
+                Incorrect username or password
+              </div>
+              <label for="license-or-id" style="font-size: 20px;">Email ID</label><br>
+              <input type="text" class="login-input" id="uninput" aria-describedby="emailHelp" required><br>
+              <label for="license-or-id"  style="font-size: 20px;">Password</label><br>
+              <input type="password" class="login-input" id="passwordinput" required>
+              <input type="submit" class="button inverse login-btn margin-top" id="dmva-signin" value="Log In">
+            <br>
+            <br>
+            <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">By starting this transaction, I confirm that I have read and accepted the <a href="https://www.ncdot.gov/dmv/offices-services/online/Pages/my-dmv-terms-of-service.aspx" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://www.ncdot.gov/about-us/how-we-operate/policy-process/Pages/privacy-policy.aspx" target="_blank" rel="noopener">Privacy Policy</a></p>
+        </div>  
+        </div>
+        <div class="column right" style="background-image: url(images/loginimage.png); background-repeat: no-repeat;"><br>
+        </div>
+    </div>
+  </div>
+</form>
+<script src="/js/login.js"></script>
+<script src="/js/Caseidcheck.js"></script>
+</body>
+</html>
+
+
