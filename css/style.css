@@ -94,7 +94,7 @@ header {
 	width:100%;
 	overflow:hidden;
 	height:auto;
-	padding:0 6px;
+	padding:0;
 }
 header h1, #page1 header h1 {
 	margin:56px 0 0 57px;
@@ -114,7 +114,6 @@ header nav {
 }
 #menu {
 	float:left;
-	padding-left:2px;
 	background:url(../images/menu_line.jpg) 0 0 no-repeat;
 }
 #menu li {
@@ -125,7 +124,8 @@ header nav {
 #menu a {
 	
 	display:block;
-	width:138px;
+	padding-left:20px;
+	padding-right: 20px;
 	font:20px "Times New Roman", Times, serif;
 	line-height:78px;
 	text-decoration:none;
